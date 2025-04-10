@@ -14,8 +14,16 @@ const Login = ({ setToken }) => {
         try {
             e.preventDefault();
 
-            const response = await axios.post(backendUrl + '/api/users/admin-login', { email, password })
-            console.log(response.data);
+            const response = await axios.post(
+                backendUrl + '/api/users/admin-login',
+                { email, password },
+                {
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                }
+              );
+              
             
             if (response.data.success) {
                 setToken(response.data.token);
