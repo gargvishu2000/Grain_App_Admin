@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 const List = ({ token }) => {
 
-    const backendUrl = "http://localhost:3000";
+    const backendUrl = "https://grain-app-backend.onrender.com";
 
     const [list, setList] = useState([]);
 

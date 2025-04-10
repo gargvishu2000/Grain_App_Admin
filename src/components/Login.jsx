@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 const Login = ({ setToken }) => {
 
-    const backendUrl = "http://localhost:3000"
+    const backendUrl = "https://grain-app-backend.onrender.com"
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

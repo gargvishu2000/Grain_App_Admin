@@ -6,7 +6,7 @@ import { assets } from '../assets/admin_assets/assets.js';
 
 const Add = ({ token }) => {
 
-    const backendUrl = "http://localhost:3000";
+    const backendUrl = "https://grain-app-backend.onrender.com";
 
     const [image1, setImage1] = useState(null);
     const [image2, setImage2] = useState(null);

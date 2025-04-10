@@ -5,7 +5,7 @@ import { assets } from "../assets/admin_assets/assets.js"
 
 const Orders = ({ token }) => {
   const [orders, setOrders] = useState([]);
-  const backendURl = "http://localhost:3000"
+  const backendURl = "https://grain-app-backend.onrender.com"
   const currency = "₹";
 
   const fetchAllOrders = async () => {
